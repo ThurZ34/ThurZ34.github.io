@@ -34,7 +34,7 @@ body {
     align-items: center;
     background-color: #414A37;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 98%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -95,6 +95,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 #contact {
@@ -249,8 +250,8 @@ body {
 }
 
 .card-image img {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     object-fit: contain;
     border-radius: 20px;
 }
@@ -273,4 +274,14 @@ body {
 
 .social-media a:hover{
     color: #DBC2A6
+}
+
+.card-skill {
+    background-color: #414A37;
+    width: 92%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px
 }
