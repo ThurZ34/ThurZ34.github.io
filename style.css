@@ -1,5 +1,5 @@
 /* =========================================
-   1. DESKTOP CSS (KODE ASLI KAMU)
+   1. DESKTOP CSS (KODE ASLI - TIDAK DIUBAH)
    ========================================= */
 * {
     margin: 0;
@@ -11,7 +11,7 @@
 html {
     scrollbar-width: none;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;;
+    -ms-overflow-style: none;
 }
 
 html::-webkit-scrollbar {
@@ -46,10 +46,9 @@ body {
 }
 
 .menu a {
-    display: flex; /* Tambahkan ini */
-    align-items: center; /* Dan ini */
-    height: 100%; /* Biar tingginya penuh */
-    
+    display: flex;
+    align-items: center;
+    height: 100%;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -67,12 +66,10 @@ body {
 
 .menu {
     display: flex;
-    justify-content: center; /* Pastikan isi menu juga di tengah */
+    justify-content: center;
     align-items: center;
-    gap: 30px; /* Jarak antar link */
-    
-    /* --- TRIK SUPAYA DI TENGAH --- */
-    margin: 0 auto; /* Dorong kiri kanan otomatis */
+    gap: 30px;
+    margin: 0 auto; /* Trik Menu Tengah */
 }
 
 .logo {
@@ -80,6 +77,19 @@ body {
     font-weight: bold;
 }
 
+/* Wrapper Menu & Sosmed untuk Desktop */
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none; /* Sembunyi di Desktop */
+}
+
+/* --- HOME SECTION --- */
 #home {
     height: 100vh;
     width: 100%;
@@ -87,15 +97,6 @@ body {
     padding: 20px;
     gap: 20px;
     padding-top: 80px;
-}
-
-#skill {
-    height: 100vh;
-    background-color: #DBC2A6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
 }
 
 .main {
@@ -125,20 +126,20 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-between; 
-    align-items: flex-start;   
-    padding: 40px; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
 }
 
 .identity h1 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     margin: 0;
     line-height: 1.1;
 }
 
 .identity span {
     font-size: 1.5rem;
-    opacity: 0.8; 
+    opacity: 0.8;
     font-weight: 300;
     display: block;
     margin-top: 10px;
@@ -146,7 +147,7 @@ body {
 
 .mini-bio p {
     font-size: 1rem;
-    line-height: 1.6; 
+    line-height: 1.6;
     color: #e0e0e0;
     max-width: 90%;
     margin-top: 20px;
@@ -155,7 +156,7 @@ body {
 .tech-stack {
     margin-top: 20px;
     width: 100%;
-    border-top: 1px solid rgba(255,255,255,0.2); 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 20px;
 }
 
@@ -170,7 +171,7 @@ body {
 .tech-stack .icons {
     display: flex;
     gap: 15px;
-    font-size: 25px; /* Ukuran icon tech stack */
+    font-size: 25px;
 }
 
 .tech-stack i {
@@ -179,7 +180,7 @@ body {
 }
 
 .tech-stack i:hover {
-    color: #DBC2A6; /* Warna emas pas disentuh */
+    color: #DBC2A6;
     transform: translateY(-5px);
 }
 
@@ -191,44 +192,44 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-between; 
-    align-items: center;  
-    padding: 20px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .card-linux span {
     font-size: 20px;
     font-weight: 300;
     opacity: 0.9;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 10px;
     width: 100%;
     text-align: center;
 }
 
 .linux-logo {
-    margin-top: auto; 
+    margin-top: auto;
     margin-bottom: auto;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;         
-    gap: 25px;              
-    max-width: 80%; 
-} 
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 80%;
+}
 
-.linux-logo i, 
+.linux-logo i,
 .linux-logo svg {
     font-size: 3rem;
     transition: 0.3s;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8); 
+    color: rgba(255, 255, 255, 0.8);
     width: 1em;
     height: 1em;
 }
 
-.linux-logo i:hover, 
-.linux-logo svg:hover { 
-    transform: translateY(-5px) scale(1.1); 
+.linux-logo i:hover,
+.linux-logo svg:hover {
+    transform: translateY(-5px) scale(1.1);
 }
 
 .linux-logo i:hover.devicon-ubuntu-plain { color: #E95420; }
@@ -236,9 +237,7 @@ body {
 .linux-logo i:hover.devicon-fedora-plain { color: #51A2DA; }
 .linux-logo i:hover.devicon-linuxmint-plain { color: #87CF3E; }
 .linux-logo i:hover.devicon-debian-plain { color: #A81D33; }
-.linux-logo svg.manjaro-icon:hover { 
-    color: #35BF5C; 
-}
+.linux-logo svg.manjaro-icon:hover { color: #35BF5C; }
 
 .card-image img {
     width: 95%;
@@ -263,25 +262,39 @@ body {
     transition: 0.3s;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     color: #DBC2A6
+}
+
+/* --- SKILL SECTION (DESKTOP) --- */
+#skill {
+    /* Gunakan min-height agar kalau konten banyak di HP gak kepotong */
+    min-height: 100vh;
+    background-color: #DBC2A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .skill-main {
     background-color: #414A37;
     width: 92%;
-    height: 92%;
+    /* Hapus height 92% fix biar responsif */
+    height: auto;
+    min-height: 92%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius:20px
+    border-radius: 20px;
+    padding-bottom: 30px; /* Tambah padding bawah */
 }
 
 .skill-main h1 {
     font-size: 25px;
     font-weight: 300;
     opacity: 0.9;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 10px;
     width: 100%;
     text-align: center;
@@ -293,15 +306,16 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    margin-top: auto; 
+    margin-top: auto;
     margin-bottom: auto;
     grid-template-columns: repeat(6, 1fr);
     padding: 3rem;
+    width: 100%;
 }
 
 .card-skill > div {
     background-color: #99744A;
-    height: 300px; 
+    height: 300px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -311,15 +325,10 @@ body {
     padding: 20px;
 }
 
-.skill-1, .skill-2, .skill-3 {
-    grid-column: span 2; 
-}
+.skill-1, .skill-2, .skill-3 { grid-column: span 2; }
+.skill-4, .skill-5 { grid-column: span 3; }
 
-.skill-4, .skill-5 {
-    grid-column: span 3;
-}
-
-.frontend-tags {
+.frontend-tags, .backend-tags, .tools-tags {
     margin-top: 15px;
     display: flex;
     justify-content: start;
@@ -327,365 +336,106 @@ body {
     flex-wrap: wrap;
 }
 
-.frontend-tags span {
-    background-color: rgba(255,255,255, 0.2);
+.frontend-tags span, .backend-tags span, .tools-tags span {
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 20px;
     font-size: 15px;
     transition: transform 0.3s ease;
 }
 
-.frontend-tags span:hover {
+.frontend-tags span:hover, .backend-tags span:hover, .tools-tags span:hover {
     transform: scale(1.1);
 }
 
-.backend-tags {
-    margin-top: 15px;
-    display: flex;
-    justify-content: start;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.backend-tags span {
-    background-color: rgba(255,255,255, 0.2);
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    transition: transform 0.3s ease;
-}
-
-.backend-tags span:hover {
-    transform: scale(1.1);
-}
-
-.tools-tags {
-    margin-top: 15px;
-    display: flex;
-    justify-content: start;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.tools-tags span {
-    background-color: rgba(255,255,255, 0.2);
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    transition: transform 0.3s ease;
-}
-
-.tools-tags span:hover {
-    transform: scale(1.1);
-}
-
-/* Header kecil biar Icon dan Judul sejajar */
+/* Header Progress Bar */
 .skill-header {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 25px; /* Jarak ke progress bar */
+    margin-bottom: 25px;
     width: 100%;
 }
 
-.skill-header h3 {
-    font-size: 1.5rem;
-    margin: 0;
-}
+.skill-header h3 { font-size: 1.5rem; margin: 0; }
 
-/* Pembungkus per Skill (Label + Bar) */
-.progress-group {
-    width: 100%;
-    margin-bottom: 15px; /* Jarak antar baris skill */
-}
-
-/* Label Teks (Nama Skill & Persen) */
-.progress-info {
-    display: flex;
-    justify-content: space-between; /* Biar nama di kiri, persen di kanan */
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: 500;
-    opacity: 0.9;
-}
-
-/* KOTAK LUAR (Jalur Abu/Gelap) */
-.progress-bg {
-    width: 100%;
-    height: 10px; /* Ketebalan bar */
-    background-color: rgba(255, 255, 255, 0.2); /* Putih transparan */
-    border-radius: 20px; /* Biar bulat ujungnya */
-    overflow: hidden; /* PENTING: Biar isi bar gak bocor keluar */
-}
-
-/* KOTAK DALAM (Isi Warna Emas) */
-.progress-fill {
-    height: 100%; /* Penuhi tinggi bapaknya */
-    background-color: #DBC2A6; /* Warna Emas tema kamu */
-    border-radius: 20px;
-    
-    /* Animasi biar keren pas loading */
-    transition: width 1s ease-in-out; 
-}
+.progress-group { width: 100%; margin-bottom: 15px; }
+.progress-info { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 14px; font-weight: 500; opacity: 0.9; }
+.progress-bg { width: 100%; height: 10px; background-color: rgba(255, 255, 255, 0.2); border-radius: 20px; overflow: hidden; }
+.progress-fill { height: 100%; background-color: #DBC2A6; border-radius: 20px; transition: width 1s ease-in-out; }
 
 /* --- PROJECT SECTION --- */
 #project {
-    /* Pakai min-height biar kalau project banyak dia memanjang */
-    min-height: 100vh; 
-    background-color: #DBC2A6; /* Background Emas/Krem */
-    padding: 100px 20px; /* Padding atas besar biar gak ketutup navbar */
-    
+    min-height: 100vh;
+    background-color: #DBC2A6;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project-header {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #414A37; /* Teks Hijau Gelap */
-}
+.project-header { text-align: center; margin-bottom: 50px; color: #414A37; }
+.project-header h1 { font-size: 3rem; margin-bottom: 10px; }
 
-.project-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* --- CONTAINER GRID (Otomatis Rapih) --- */
 .project-container {
     display: grid;
-    /* Mantra Ajaib: Bikin kolom sebanyak mungkin, minimal lebarnya 300px */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     width: 100%;
-    max-width: 1200px; /* Biar gak terlalu lebar di monitor raksasa */
+    max-width: 1200px;
 }
 
-/* --- KARTU PROJECT --- */
 .project-card {
-    background-color: #414A37; /* Kartu Hijau */
-    border-radius: 20px;
-    overflow: hidden; /* Biar gambar gak keluar radius */
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Efek Hover: Kartu Naik */
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Gambar Project */
-.project-img {
-    width: 100%;
-    height: 200px; /* Tinggi gambar fix */
-    overflow: hidden;
-}
-
-.project-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Anti Gepeng */
-    transition: 0.5s;
-}
-
-/* Efek Hover: Gambar Zoom Dikit */
-.project-card:hover .project-img img {
-    transform: scale(1.1);
-}
-
-/* Konten Teks */
-.project-content {
-    padding: 25px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Biar tinggi kartu sama rata */
-}
-
-.project-tags {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.project-tags span {
-    background-color: rgba(255,255,255,0.1);
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.project-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project-content p {
-    font-size: 14px;
-    opacity: 0.8;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Tombol Link di Bawah */
-.project-links {
-    margin-top: auto; /* Dorong ke paling bawah */
-    display: flex;
-    gap: 20px;
-}
-
-.project-links a {
-    color: #DBC2A6; /* Warna Emas */
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: 0.3s;
-}
-
-.project-links a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-#contact {
-    height: 100vh; /* Wajib 100vh */
-    width: 100%;
-    background-color: #DBC2A6;
-    
-    /* PADDING: */
-    /* Atas 100px (Biar gak ketutup navbar) */
-    /* Bawah 20px (Biar gak nempel lantai banget) */
-    /* Kiri Kanan 20px */
-    padding: 100px 20px 20px 20px;
-    
-    /* Pastikan padding dihitung di dalam tinggi total */
-    box-sizing: border-box; 
-}
-
-/* 2. WADAH UTAMA: Penuhi sisa ruang bapaknya */
-.contact-main {
-    display: flex;
-    width: 100%;
-    /* HAPUS tinggi fix (600px), ganti jadi 100% */
-    height: 100%; 
-    gap: 20px;
-}
-
-/* --- BAGIAN KIRI (FORM) --- */
-.form-container {
-    flex: 1.5; /* Lebar 60% */
     background-color: #414A37;
     border-radius: 20px;
-    padding: 40px;
-    color: white;
-    
-    /* TINGGI PENUH */
-    height: 100%; 
-    
-    /* Biar isi form ada di tengah-tengah kotak */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Styling Form sederhana biar gak berantakan */
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-.form-container input, .form-container textarea {
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-}
-.form-container textarea { height: 150px; resize: none; }
-.form-container button {
-    padding: 15px;
-    background-color: #DBC2A6;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* --- BAGIAN KANAN (WRAPPER) --- */
-.contact-right {
-    flex: 2; /* Lebar 40% */
-    
-    /* TINGGI PENUH */
-    height: 100%; 
-    
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Kanan Atas (Address) */
-.address-box {
-    flex: 1; /* Ambil 50% tinggi kanan */
-    background-color: #99744A;
-    border-radius: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    
-    /* Pastikan tingginya ngisi */
-    height: 100%; 
-}
-
-/* Kanan Bawah (Image) */
-.image-box {
-    flex: 1; /* Ambil 50% tinggi kanan sisanya */
-    border-radius: 20px;
     overflow: hidden;
-    
-    /* Pastikan tingginya ngisi */
-    height: 100%; 
-}
-
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* WAJIB: Biar gambar gak gepeng pas ditarik full */
-}
-
-/* =========================================
-   2. TAMBAHAN WAJIB UNTUK DESKTOP (PENGHUBUNG SIDEBAR)
-   (Agar navbar tidak rusak karena ada nav-wrapper)
-   ========================================= */
-
-/* Sembunyikan Tombol Burger di Laptop */
-.menu-toggle {
-    display: none; 
-}
-
-/* Pastikan Wrapper Menu berjejer rapi di Laptop */
-.nav-wrapper {
+    transition: 0.3s;
     display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    
-    /* HAPUS ATAU UBAH INI */
-    /* justify-content: space-between; <--- HAPUS INI */
+    flex-direction: column;
 }
 
-/* =========================================
-   3. RESPONSIVE MOBILE (SIDEBAR MODE)
-   ========================================= */
+.project-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+.project-img { width: 100%; height: 200px; overflow: hidden; }
+.project-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.project-card:hover .project-img img { transform: scale(1.1); }
+
+.project-content { padding: 25px; color: white; display: flex; flex-direction: column; flex: 1; }
+.project-tags { display: flex; gap: 10px; margin-bottom: 15px; }
+.project-tags span { background-color: rgba(255, 255, 255, 0.1); padding: 5px 12px; border-radius: 15px; font-size: 12px; font-weight: 600; letter-spacing: 1px; }
+.project-content h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.project-content p { font-size: 14px; opacity: 0.8; line-height: 1.6; margin-bottom: 20px; }
+.project-links { margin-top: auto; display: flex; gap: 20px; }
+.project-links a { color: #DBC2A6; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 5px; transition: 0.3s; }
+.project-links a:hover { color: white; text-decoration: underline; }
+
+/* --- CONTACT SECTION --- */
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-color: #DBC2A6;
+    padding: 100px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.contact-main { display: flex; width: 100%; height: 100%; gap: 20px; }
+.form-container {
+    flex: 1.5; height: 100%; background-color: #414A37; border-radius: 20px; padding: 40px; color: white;
+    display: flex; flex-direction: column; justify-content: center;
+}
+.form-container form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.form-container input, .form-container textarea { padding: 15px; border-radius: 10px; border: none; outline: none; }
+.form-container textarea { height: 150px; resize: none; }
+.form-container button { padding: 15px; background-color: #DBC2A6; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
+
+.contact-right { flex: 2; height: 100%; display: flex; flex-direction: column; gap: 20px; }
+.address-box {
+    flex: 1; background-color: #99744A; border-radius: 20px; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; color: white; height: 100%;
+}
+.image-box { flex: 1; border-radius: 20px; overflow: hidden; height: 100%; }
+.image-box img { width: 100%; height: 100%; object-fit: cover; }
+
+
 /* =========================================
    RESPONSIVE MOBILE FIX (HP & Tablet)
    ========================================= */
@@ -693,111 +443,72 @@ body {
 
     /* --- 1. RESET GLOBAL --- */
     html, body {
-        overflow-x: hidden; /* Cegah scroll samping */
+        overflow-x: hidden;
         width: 100%;
     }
 
-    /* --- 2. NAVBAR FIX (CRITICAL!) --- */
+    /* --- 2. NAVBAR FIX (Sidebar Mode) --- */
     .navbar {
-        /* Matikan centering desktop */
         left: 0;
-        transform: none; 
-        
-        /* Atur ulang posisi mobile */
+        transform: none; /* Matikan centering desktop */
         width: 100%;
         top: 0;
-        border-radius: 0; /* Kotak penuh di atas */
+        border-radius: 0;
         padding: 15px 20px;
         justify-content: space-between;
     }
 
-    .logo {
-        font-size: 1.2rem;
-        z-index: 1001; /* Agar logo tetap di atas sidebar */
+    .logo, .menu-toggle {
+        z-index: 1001; /* Di atas sidebar */
         position: relative;
     }
 
-    /* TOMBOL BURGER */
+    /* Munculkan Tombol Burger */
     .menu-toggle {
         display: block;
         font-size: 28px;
         color: white;
         cursor: pointer;
-        z-index: 1001; /* Agar tombol tetap di atas sidebar */
-        position: relative;
     }
 
-    /* SIDEBAR / NAV WRAPPER */
+    /* Sidebar */
     .nav-wrapper {
         position: fixed;
         top: 0;
-        right: -100%; /* Sembunyi di kanan */
-        width: 80%;   /* Lebar sidebar */
+        right: -100%;
+        width: 80%;
         height: 100vh;
-        background-color: #2f3e30; /* Hijau lebih gelap biar kontras */
-        
+        background-color: #2f3e30;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
-        
         transition: 0.4s ease-in-out;
         box-shadow: -5px 0 15px rgba(0,0,0,0.5);
-        z-index: 1000; /* Di bawah tombol burger/logo */
+        z-index: 1000;
     }
 
-    .nav-wrapper.active {
-        right: 0; /* Muncul */
-    }
+    .nav-wrapper.active { right: 0; }
 
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
+    .menu { flex-direction: column; gap: 25px; margin: 0; }
+    .menu a { font-size: 20px; font-weight: 600; }
+    .social-media { display: flex; gap: 20px; }
 
-    .menu a {
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .social-media {
-        display: flex; /* Munculkan sosmed di sidebar */
-        gap: 20px;
-    }
-
-    /* --- 3. SECTION HOME --- */
+    /* --- 3. HOME FIX --- */
     #home {
         flex-direction: column;
         height: auto;
-        padding: 100px 20px 50px 20px; /* Tambah padding atas */
+        padding: 100px 20px 50px 20px;
     }
-
-    .main {
+    .main, .card-name, .card-linux, .card-image {
         width: 100%;
-        gap: 20px;
-    }
-
-    .card-name, .card-linux {
-        width: 100%;
-        padding: 25px;
         height: auto;
     }
-
+    .card-image { height: 300px; margin-top: 20px; }
     .identity h1 { font-size: 2.5rem; }
-    
-    .tech-stack .icons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    .tech-stack .icons { flex-wrap: wrap; justify-content: center; }
 
-    .card-image {
-        width: 100%;
-        height: 300px; /* Batasi tinggi gambar */
-        margin-top: 20px;
-    }
-
-    /* --- 4. SECTION SKILL (GRID FIX) --- */
+    /* --- 4. SKILL FIX (INI YANG KITA PERBAIKI) --- */
     #skill {
         height: auto;
         padding: 50px 20px;
@@ -808,54 +519,48 @@ body {
         padding-bottom: 30px;
     }
 
+    /* Ubah Grid jadi Flex Column agar menumpuk ke bawah */
     .card-skill {
-        /* Hancurkan Grid 6 kolom desktop, jadikan 1 kolom */
         display: flex; 
         flex-direction: column; 
         gap: 20px;
-        padding: 20px;
-        width: 100%;
+        padding: 20px 0; /* Hapus padding samping biar lega */
+        width: 90%;      /* Lebar isi 90% */
+        grid-template-columns: none; /* Matikan grid */
     }
 
-    .skill-box {
-        width: 100%; /* Lebar penuh */
-        height: auto; /* Tinggi menyesuaikan isi */
+    /* TARGET SEMUA ANAK DIV (.skill-1, .skill-2, dll) */
+    .card-skill > div {
+        width: 100% !important; /* Paksa lebar penuh */
+        height: auto;
         min-height: 280px;
+        margin: 0;
+        grid-column: auto !important; /* Reset grid span desktop */
     }
 
-    /* Override grid span desktop */
-    .skill-1, .skill-2, .skill-3, .skill-4, .skill-5 {
-        grid-column: auto;
-    }
-
-    /* --- 5. SECTION PROJECT --- */
+    /* --- 5. PROJECT FIX --- */
     #project {
         height: auto;
         padding: 50px 20px;
     }
-
     .project-container {
-        grid-template-columns: 1fr; /* 1 Kolom ke bawah */
+        grid-template-columns: 1fr; /* 1 Kolom */
     }
 
-    /* --- 6. SECTION CONTACT --- */
+    /* --- 6. CONTACT FIX --- */
     #contact {
         height: auto;
         padding: 50px 20px 100px 20px;
     }
-
     .contact-main {
         flex-direction: column;
         height: auto;
     }
-
-    .form-container {
+    .form-container, .contact-right {
+        flex: none;
         width: 100%;
-        padding: 30px 20px;
     }
-
     .contact-right {
-        width: 100%;
-        height: 400px; /* Tinggi map/gambar fix di HP */
+        height: 400px;
     }
 }
