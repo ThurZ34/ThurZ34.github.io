@@ -16,9 +16,10 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">Thur</div>
+   <nav class="navbar">
+    <div class="logo">Thur</div>
 
+    <div class="nav-wrapper">
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#skill">Skill</a></li>
@@ -27,11 +28,22 @@
         </ul>
 
         <ul class="social-media">
-            <li><a href="#" class="ri-github-fill"></a></li>
-            <li><a href="#" class="ri-instagram-line"></a></li>
-            <li><a href="#" class="ri-tiktok-fill"></a></li>
+            <li>
+                <a href="#" target="_blank"><i class="ri-github-fill"></i></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><i class="ri-tiktok-fill"></i></a>
+            </li>
         </ul>
-    </nav>
+    </div>
+
+    <div class="menu-toggle">
+        <i class="ri-menu-3-line"></i>
+    </div>
+</nav>
 
     <section id="home">
         <div class="main">
@@ -53,7 +65,7 @@
                     </p>
                     <p>
                         Di luar koding, saya adalah penggemar berat Linux. Perjalanan teknis saya diwarnai dengan hobi
-                        <em>"distro hopping"</em>—mencoba
+                        <strong>"distro hopping"</strong>—mencoba
                         puluhan distro Linux untuk mencari kenyamanan terbaik. Setelah petualangan panjang tersebut,
                         kini saya menetap menggunakan
                         <strong>Fedora</strong> sebagai <em>daily driver</em> yang menemani saya berkarya setiap hari.
@@ -109,19 +121,326 @@
     </section>
 
     <section id="skill">
-        <div class="card-skill">
-            <h1>tes</h1>
+        <div class="skill-main">
+            <h1>My Skill</h1>
+            <div class="card-skill">
+                <div class="skill-1">
+                    <i class="ri-layout-3-line" style="font-size: 40px; margin-bottom: 10px;"></i>
+                    <h2>Frontend</h2>
+
+                    <p class="frontend-desc" style="margin-top: 10px;">
+                        Saya fokus menciptakan pengalaman pengguna (UX) yang halus dengan
+                        animasi interaktif dan tata letak yang responsif di semua perangkat.
+                    </p>
+                    <div class="frontend-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Vue.js</span>
+                        <span>React.js</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+                <div class="skill-2">
+                    <i class="ri-server-line" style="font-size: 40px; margin-bottom: 10px;"></i>
+
+                    <h2>Backend</h2>
+
+                    <p class="backend-desc" style="margin-top: 10px;">
+                        Mengembangkan sistem <strong>PHP/Laravel</strong> yang terstruktur,
+                        sembari mendalami <strong>Go</strong> & <strong>Node.js</strong> untuk performa maksimal.
+                    </p>
+                    <div class="backend-tags">
+                        <span>PHP</span>
+                        <span>Python</span>
+                        <span>Laravel</span>
+                        <span>Go & Node.js (Learning)</span>
+                    </div>
+                </div>
+                <div class="skill-3">
+                    <i class="ri-terminal-box-line" style="font-size: 40px; margin-bottom: 10px;"></i>
+
+                    <h2>Tools</h2>
+
+                    <p class="tools-desc" style="margin-top: 10px;">
+                        Merancang antarmuka desain website atau sistem di <strong>Figma</strong> dan
+                        <em>mengembangkannya</em> di <strong>VS Code</strong>,
+                        serta didukung <strong>Git & GitHub</strong> untuk berbagi dan kolaborasi.
+                    </p>
+                    <div class="tools-tags">
+                        <span>Vs Code</span>
+                        <span>Figma</span>
+                        <span> Git & Github</span>
+                    </div>
+                </div>
+                <div class="skill-4">
+                    <div class="skill-header">
+                        <i class="ri-macbook-fill" style="font-size: 35px;"></i>
+                        <h3>Frontend</h3>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>HTML & CSS</span>
+                            <span>82%%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>Tailwind</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>JavaScript</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>Vue / React</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-5">
+                    <div class="skill-header">
+                        <i class="ri-braces-line" style="font-size: 35px;"></i>
+                        <h3>Backend</h3>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>PHP & Laravel</span>
+                            <span>72%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 72%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>Python</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>Go (Golang)</span>
+                            <span>12%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 12%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <div class="progress-info">
+                            <span>Node.js</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 25%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="project">
-        <h1>Halaman Project</h1>
+        <div class="project-header">
+            <h1>Featured Projects</h1>
+            <p>Beberapa hasil kodingan saya</p>
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/signflow.jpeg" alt="Project 1">
+                </div>
+
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Tensorflow</span>
+                        <span>OpenCV</span>
+                    </div>
+
+                    <h3>SignFlow</h3>
+                    <p>Sistem deteksi bahasa isyarat berbasis <strong>Python</strong> yang dikembangkan secara
+                        kolaboratif untuk menjembatani komunikasi.</p>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/travelsya.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <h3>Travelsya</h3>
+                    <p>
+                        Aplikasi layanan travel dan booking hotel berbasis web untuk pengalaman wisata yang praktis dan
+                        efisien.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Source Code</a>
+                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/smartnaker.png" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <h3>Smartnaker</h3>
+                    <p>
+                        Platform manajemen pelatihan online (LMS) yang menyajikan materi kursus terstruktur untuk
+                        pengembangan keahlian profesional.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Source Code</a>
+                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/koni.png" alt="Project 4">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>Bootstrap/HTML/CSS</span>
+                    </div>
+                    <h3>Web Koni</h3>
+                    <p>
+                        Sistem informasi terpadu untuk manajemen database atlet, pelatih, dan rekapitulasi prestasi di
+                        lingkungan KONI.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Source Code</a>
+                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/blog.png" alt="Project 5">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>Vue/Bootstrap</span>
+                    </div>
+                    <h3>Stackoverflow Copy</h3>
+                    <p>Website copy stackoverflow untukku belajar Vue.js dan memperdalam pengembangan website dengan
+                        berbagai framework</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Source Code</a>
+                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/moodmate.jpeg" alt="Project 5">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Fast API</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <h3>MoodMate</h3>
+                    <p>
+                        Platform chat interaktif berbasis AI yang mampu mengadaptasi gaya respon dan empati sesuai
+                        dengan suasana hati (mood) pengguna.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Source Code</a>
+                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section id="contact">
-        <h1>Halaman Contact</h1>
-    </section>
-</body>
+    <div class="contact-main">
+       
+        <div class="form-container">
+            <h1>Contact Me</h1>
+            <form>
+                <input type="text" placeholder="Nama">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Pesan"></textarea>
+                <button>Kirim</button>
+            </form>
+        </div>
+
+        <div class="contact-right">
+            
+            <div class="address-box">
+                <h1>Balikpapan</h1>
+                <p>Indonesia</p>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/Kota-Balikpapan.jpg" alt="Kota Balikpapan">
+            </div>
+            
+        </div>
+
+    </div>
+</section>
 <script src="script.js"></script>
+</body>
+
 
 </html>

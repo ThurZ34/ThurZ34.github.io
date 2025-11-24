@@ -36,3 +36,34 @@
                 }
             });
         };
+
+        // 1. Ambil elemen yang dibutuhkan
+const menuToggle = document.querySelector('.menu-toggle');
+const navWrapper = document.querySelector('.nav-wrapper');
+
+// 2. Saat tombol hamburger diklik
+menuToggle.addEventListener('click', () => {
+    // Toggle class 'active' pada sidebar
+    navWrapper.classList.toggle('active');
+    
+    // Opsional: Ganti icon garis tiga jadi silang (X)
+    const icon = menuToggle.querySelector('i');
+    if (navWrapper.classList.contains('active')) {
+        icon.classList.replace('ri-menu-3-line', 'ri-close-line');
+    } else {
+        icon.classList.replace('ri-close-line', 'ri-menu-3-line');
+    }
+});
+
+// 3. (PENTING) Tutup sidebar saat salah satu link diklik
+// Biar user gak capek nutup manual setelah klik "About"
+const navLinksSidebar = document.querySelectorAll('.nav-wrapper a');
+
+navLinksSidebar.forEach(link => {
+    link.addEventListener('click', () => {
+        navWrapper.classList.remove('active');
+        // Balikin icon jadi garis tiga
+        const icon = menuToggle.querySelector('i');
+        icon.classList.replace('ri-close-line', 'ri-menu-3-line');
+    });
+});
