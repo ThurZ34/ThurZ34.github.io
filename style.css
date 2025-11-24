@@ -1,6 +1,3 @@
-/* =========================================
-   1. DESKTOP CSS (KODE ASLI - TIDAK DIUBAH)
-   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +66,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 0 auto; /* Trik Menu Tengah */
+    margin: 0 auto;
 }
 
 .logo {
@@ -77,7 +74,6 @@ body {
     font-weight: bold;
 }
 
-/* Wrapper Menu & Sosmed untuk Desktop */
 .nav-wrapper {
     display: flex;
     align-items: center;
@@ -86,10 +82,9 @@ body {
 }
 
 .menu-toggle {
-    display: none; /* Sembunyi di Desktop */
+    display: none;
 }
 
-/* --- HOME SECTION --- */
 #home {
     height: 100vh;
     width: 100%;
@@ -232,12 +227,29 @@ body {
     transform: translateY(-5px) scale(1.1);
 }
 
-.linux-logo i:hover.devicon-ubuntu-plain { color: #E95420; }
-.linux-logo i:hover.devicon-archlinux-plain { color: #1793D1; }
-.linux-logo i:hover.devicon-fedora-plain { color: #51A2DA; }
-.linux-logo i:hover.devicon-linuxmint-plain { color: #87CF3E; }
-.linux-logo i:hover.devicon-debian-plain { color: #A81D33; }
-.linux-logo svg.manjaro-icon:hover { color: #35BF5C; }
+.linux-logo i:hover.devicon-ubuntu-plain {
+    color: #E95420;
+}
+
+.linux-logo i:hover.devicon-archlinux-plain {
+    color: #1793D1;
+}
+
+.linux-logo i:hover.devicon-fedora-plain {
+    color: #51A2DA;
+}
+
+.linux-logo i:hover.devicon-linuxmint-plain {
+    color: #87CF3E;
+}
+
+.linux-logo i:hover.devicon-debian-plain {
+    color: #A81D33;
+}
+
+.linux-logo svg.manjaro-icon:hover {
+    color: #35BF5C;
+}
 
 .card-image img {
     width: 95%;
@@ -266,9 +278,7 @@ body {
     color: #DBC2A6
 }
 
-/* --- SKILL SECTION (DESKTOP) --- */
 #skill {
-    /* Gunakan min-height agar kalau konten banyak di HP gak kepotong */
     min-height: 100vh;
     background-color: #DBC2A6;
     display: flex;
@@ -280,14 +290,13 @@ body {
 .skill-main {
     background-color: #414A37;
     width: 92%;
-    /* Hapus height 92% fix biar responsif */
     height: auto;
     min-height: 92%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    padding-bottom: 30px; /* Tambah padding bawah */
+    padding-bottom: 30px;
 }
 
 .skill-main h1 {
@@ -313,7 +322,7 @@ body {
     width: 100%;
 }
 
-.card-skill > div {
+.card-skill>div {
     background-color: #99744A;
     height: 300px;
     border-radius: 20px;
@@ -325,10 +334,20 @@ body {
     padding: 20px;
 }
 
-.skill-1, .skill-2, .skill-3 { grid-column: span 2; }
-.skill-4, .skill-5 { grid-column: span 3; }
+.skill-1,
+.skill-2,
+.skill-3 {
+    grid-column: span 2;
+}
 
-.frontend-tags, .backend-tags, .tools-tags {
+.skill-4,
+.skill-5 {
+    grid-column: span 3;
+}
+
+.frontend-tags,
+.backend-tags,
+.tools-tags {
     margin-top: 15px;
     display: flex;
     justify-content: start;
@@ -336,7 +355,9 @@ body {
     flex-wrap: wrap;
 }
 
-.frontend-tags span, .backend-tags span, .tools-tags span {
+.frontend-tags span,
+.backend-tags span,
+.tools-tags span {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 20px;
@@ -344,11 +365,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-.frontend-tags span:hover, .backend-tags span:hover, .tools-tags span:hover {
+.frontend-tags span:hover,
+.backend-tags span:hover,
+.tools-tags span:hover {
     transform: scale(1.1);
 }
 
-/* Header Progress Bar */
 .skill-header {
     display: flex;
     align-items: center;
@@ -357,14 +379,40 @@ body {
     width: 100%;
 }
 
-.skill-header h3 { font-size: 1.5rem; margin: 0; }
+.skill-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
 
-.progress-group { width: 100%; margin-bottom: 15px; }
-.progress-info { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 14px; font-weight: 500; opacity: 0.9; }
-.progress-bg { width: 100%; height: 10px; background-color: rgba(255, 255, 255, 0.2); border-radius: 20px; overflow: hidden; }
-.progress-fill { height: 100%; background-color: #DBC2A6; border-radius: 20px; transition: width 1s ease-in-out; }
+.progress-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-/* --- PROJECT SECTION --- */
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.progress-bg {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #DBC2A6;
+    border-radius: 20px;
+    transition: width 1s ease-in-out;
+}
+
 #project {
     min-height: 100vh;
     background-color: #DBC2A6;
@@ -374,8 +422,16 @@ body {
     align-items: center;
 }
 
-.project-header { text-align: center; margin-bottom: 50px; color: #414A37; }
-.project-header h1 { font-size: 3rem; margin-bottom: 10px; }
+.project-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #414A37;
+}
+
+.project-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 
 .project-container {
     display: grid;
@@ -394,21 +450,84 @@ body {
     flex-direction: column;
 }
 
-.project-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-.project-img { width: 100%; height: 200px; overflow: hidden; }
-.project-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-.project-card:hover .project-img img { transform: scale(1.1); }
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-.project-content { padding: 25px; color: white; display: flex; flex-direction: column; flex: 1; }
-.project-tags { display: flex; gap: 10px; margin-bottom: 15px; }
-.project-tags span { background-color: rgba(255, 255, 255, 0.1); padding: 5px 12px; border-radius: 15px; font-size: 12px; font-weight: 600; letter-spacing: 1px; }
-.project-content h3 { font-size: 1.5rem; margin-bottom: 10px; }
-.project-content p { font-size: 14px; opacity: 0.8; line-height: 1.6; margin-bottom: 20px; }
-.project-links { margin-top: auto; display: flex; gap: 20px; }
-.project-links a { color: #DBC2A6; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 5px; transition: 0.3s; }
-.project-links a:hover { color: white; text-decoration: underline; }
+.project-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
 
-/* --- CONTACT SECTION --- */
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.1);
+}
+
+.project-content {
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-tags span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.project-links a {
+    color: #DBC2A6;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 #contact {
     height: 100vh;
     width: 100%;
@@ -417,40 +536,98 @@ body {
     box-sizing: border-box;
 }
 
-.contact-main { display: flex; width: 100%; height: 100%; gap: 20px; }
+.contact-main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
 .form-container {
-    flex: 1.5; height: 100%; background-color: #414A37; border-radius: 20px; padding: 40px; color: white;
-    display: flex; flex-direction: column; justify-content: center;
+    flex: 1.5;
+    height: 100%;
+    background-color: #414A37;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.form-container form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
-.form-container input, .form-container textarea { padding: 15px; border-radius: 10px; border: none; outline: none; }
-.form-container textarea { height: 150px; resize: none; }
-.form-container button { padding: 15px; background-color: #DBC2A6; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
 
-.contact-right { flex: 2; height: 100%; display: flex; flex-direction: column; gap: 20px; }
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.form-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-container button {
+    padding: 15px;
+    background-color: #DBC2A6;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-right {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .address-box {
-    flex: 1; background-color: #99744A; border-radius: 20px; display: flex; flex-direction: column;
-    justify-content: center; align-items: center; color: white; height: 100%;
+    flex: 1;
+    background-color: #99744A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
 }
-.image-box { flex: 1; border-radius: 20px; overflow: hidden; height: 100%; }
-.image-box img { width: 100%; height: 100%; object-fit: cover; }
 
+.image-box {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
 
-/* =========================================
-   RESPONSIVE MOBILE FIX (HP & Tablet)
-   ========================================= */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 768px) {
 
-    /* --- 1. RESET GLOBAL --- */
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
         width: 100%;
     }
 
-    /* --- 2. NAVBAR FIX (Sidebar Mode) --- */
     .navbar {
         left: 0;
-        transform: none; /* Matikan centering desktop */
+        transform: none;
         width: 100%;
         top: 0;
         border-radius: 0;
@@ -458,12 +635,12 @@ body {
         justify-content: space-between;
     }
 
-    .logo, .menu-toggle {
-        z-index: 1001; /* Di atas sidebar */
+    .logo,
+    .menu-toggle {
+        z-index: 1001;
         position: relative;
     }
 
-    /* Munculkan Tombol Burger */
     .menu-toggle {
         display: block;
         font-size: 28px;
@@ -471,7 +648,6 @@ body {
         cursor: pointer;
     }
 
-    /* Sidebar */
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -484,31 +660,58 @@ body {
         align-items: center;
         gap: 30px;
         transition: 0.4s ease-in-out;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
         z-index: 1000;
     }
 
-    .nav-wrapper.active { right: 0; }
+    .nav-wrapper.active {
+        right: 0;
+    }
 
-    .menu { flex-direction: column; gap: 25px; margin: 0; }
-    .menu a { font-size: 20px; font-weight: 600; }
-    .social-media { display: flex; gap: 20px; }
+    .menu {
+        flex-direction: column;
+        gap: 25px;
+        margin: 0;
+    }
 
-    /* --- 3. HOME FIX --- */
+    .menu a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .social-media {
+        display: flex;
+        gap: 20px;
+    }
+
     #home {
         flex-direction: column;
         height: auto;
         padding: 100px 20px 50px 20px;
     }
-    .main, .card-name, .card-linux, .card-image {
+
+    .main,
+    .card-name,
+    .card-linux,
+    .card-image {
         width: 100%;
         height: auto;
     }
-    .card-image { height: 300px; margin-top: 20px; }
-    .identity h1 { font-size: 2.5rem; }
-    .tech-stack .icons { flex-wrap: wrap; justify-content: center; }
 
-    /* --- 4. SKILL FIX (INI YANG KITA PERBAIKI) --- */
+    .card-image {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .identity h1 {
+        font-size: 2.5rem;
+    }
+
+    .tech-stack .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     #skill {
         height: auto;
         padding: 50px 20px;
@@ -519,47 +722,48 @@ body {
         padding-bottom: 30px;
     }
 
-    /* Ubah Grid jadi Flex Column agar menumpuk ke bawah */
     .card-skill {
-        display: flex; 
-        flex-direction: column; 
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        padding: 20px 0; /* Hapus padding samping biar lega */
-        width: 90%;      /* Lebar isi 90% */
-        grid-template-columns: none; /* Matikan grid */
+        padding: 20px 0;
+        width: 90%;
+        grid-template-columns: none;
     }
 
-    /* TARGET SEMUA ANAK DIV (.skill-1, .skill-2, dll) */
-    .card-skill > div {
-        width: 100% !important; /* Paksa lebar penuh */
+    .card-skill>div {
+        width: 100% !important;
         height: auto;
         min-height: 280px;
         margin: 0;
-        grid-column: auto !important; /* Reset grid span desktop */
+        grid-column: auto !important;
     }
 
-    /* --- 5. PROJECT FIX --- */
     #project {
         height: auto;
         padding: 50px 20px;
     }
+
     .project-container {
-        grid-template-columns: 1fr; /* 1 Kolom */
+        grid-template-columns: 1fr;
     }
 
-    /* --- 6. CONTACT FIX --- */
     #contact {
         height: auto;
         padding: 50px 20px 100px 20px;
     }
+
     .contact-main {
         flex-direction: column;
         height: auto;
     }
-    .form-container, .contact-right {
+
+    .form-container,
+    .contact-right {
         flex: none;
         width: 100%;
     }
+
     .contact-right {
         height: 400px;
     }
